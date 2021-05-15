@@ -24,6 +24,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="didTapAlertButton:" destination="nFU-h5-VZg" eventType="touchUpInside" id="4ES-he-hxu"/>
+                                    <action selector="didTapAlertButton:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="pkV-gS-Poj"/>
                                 </connections>
                             </button>
                         </subviews>
