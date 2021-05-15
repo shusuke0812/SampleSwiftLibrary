@@ -8,7 +8,7 @@
 import UIKit
 
 protocol BaseViewDelegate: AnyObject {
-    func didTapAlerButton()
+    func didTapAlertButton()
 }
 
 class BaseView: UIView {
@@ -22,7 +22,7 @@ class BaseView: UIView {
         self.initUI()
     }
     @IBAction func didTapAlertButton(_ sender: Any) {
-        self.delegate?.didTapAlerButton()
+        self.delegate?.didTapAlertButton()
     }
 }
 // MARK: - Initialized Method
