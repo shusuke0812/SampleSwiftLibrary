@@ -30,8 +30,8 @@ extension BaseView {
     private func initUI() {
         self.alertButton.backgroundColor = .systemRed
         self.alertButton.setTitle("アラートを表示する", for: .normal)
+        self.alertButton.setTitleColor(.white, for: .normal)
         self.alertButton.clipsToBounds = true
         self.alertButton.layer.cornerRadius = 5
-        self.alertButton.translatesAutoresizingMaskIntoConstraints = false
     }
 }

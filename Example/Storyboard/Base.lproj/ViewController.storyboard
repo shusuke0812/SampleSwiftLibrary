@@ -17,7 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFH-D3-LtC">
-                                <rect key="frame" x="15" y="433" width="384" height="30"/>
+                                <rect key="frame" x="15" y="425.5" width="384" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="h6M-qx-wc1"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="didTapAlertButton:" destination="nFU-h5-VZg" eventType="touchUpInside" id="4ES-he-hxu"/>
