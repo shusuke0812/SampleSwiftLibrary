@@ -10,11 +10,19 @@
 
 ## 手順
 1. Xcodeより新しく `Framwork` のテンプレートを選んでプロジェクトを作る
-2. 
+2. ビルドして.framwork作成したらこのライブラリを使うアプリにembedするだけ
+  
+
+#### おまけ  
+ライブラリにサンプルソースを置きたい場合は 
+1. File > New > Target > App　で Exampleプロジェクトファイル を作成
+2. ExampleのBuild Phasesにある`Link Binary With Libraries`に作ったライブラリを追加
+3. ExampleのGeneralにある`Frameworks, Libraries, and Embedded Content`に追加したライブラリがあることを確認し、Embed欄を`Embed & Sign`に変更する
+4. 各ファイルで`impor 自作ライブラリ名`とすることでライブラリを使用できるようになる
 
 
 ## 参考
 - 
 
 ## メモ
-- 
+- [【iOS】オープンソースSwiftライブラリのつくり方](https://qiita.com/shtnkgm/items/0f62398c66af159401a6)
