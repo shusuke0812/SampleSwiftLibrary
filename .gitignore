@@ -7,6 +7,7 @@
 /*.xcodeproj
 xcuserdata/
 DerivedData/
+Main/SampleSwiftLibrary/Originlib/OriginalFramework.framework
 
 # vim
 *.swp
