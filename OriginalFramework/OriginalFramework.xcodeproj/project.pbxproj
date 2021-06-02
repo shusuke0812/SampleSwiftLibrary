@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9C8EC49B2667751A00AC2C51 /* OriginalFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C8EC4992667751A00AC2C51 /* OriginalFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C8EC4A32667758C00AC2C51 /* OriginalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EC4A22667758C00AC2C51 /* OriginalViewController.swift */; };
+		9C8EC4A82667761B00AC2C51 /* OriginalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8EC4A72667761B00AC2C51 /* OriginalViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C8EC4962667751A00AC2C51 /* OriginalFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OriginalFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8EC4992667751A00AC2C51 /* OriginalFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OriginalFramework.h; sourceTree = "<group>"; };
 		9C8EC49A2667751A00AC2C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8EC4A22667758C00AC2C51 /* OriginalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalViewController.swift; sourceTree = "<group>"; };
+		9C8EC4A72667761B00AC2C51 /* OriginalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OriginalViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +50,28 @@
 		9C8EC4982667751A00AC2C51 /* OriginalFramework */ = {
 			isa = PBXGroup;
 			children = (
+				9C8EC4A6266775CC00AC2C51 /* Storyboard */,
+				9C8EC4A5266775C500AC2C51 /* ViewController */,
 				9C8EC4992667751A00AC2C51 /* OriginalFramework.h */,
 				9C8EC49A2667751A00AC2C51 /* Info.plist */,
 			);
 			path = OriginalFramework;
+			sourceTree = "<group>";
+		};
+		9C8EC4A5266775C500AC2C51 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9C8EC4A22667758C00AC2C51 /* OriginalViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9C8EC4A6266775CC00AC2C51 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9C8EC4A72667761B00AC2C51 /* OriginalViewController.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +116,7 @@
 				TargetAttributes = {
 					9C8EC4952667751A00AC2C51 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -120,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8EC4A82667761B00AC2C51 /* OriginalViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8EC4A32667758C00AC2C51 /* OriginalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +286,7 @@
 		9C8EC49F2667751A00AC2C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
@@ -277,6 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.shusuke.ota.OriginalFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +312,7 @@
 		9C8EC4A02667751A00AC2C51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;

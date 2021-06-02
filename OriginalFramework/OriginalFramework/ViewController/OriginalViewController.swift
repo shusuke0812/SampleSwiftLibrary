@@ -7,23 +7,33 @@
 
 import UIKit
 
-class OriginalViewController: UIViewController {
+public class OriginalViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var screenDescriptionLabel: UILabel!
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        self.initUI()
     }
-    */
-
+}
+// MARK: - Private
+extension OriginalViewController {
+    private func initUI() {
+        self.screenDescriptionLabel.text = "この画面はOriginalFrameworkで定義されたものです"
+    }
+}
+// MARK: - Public
+extension OriginalViewController {
+    public func printLabel() {
+        if let text = self.screenDescriptionLabel.text {
+            print(text)
+        } else {
+            print("Labelの読み込みに失敗しました")
+        }
+    }
+    public func initViewController() -> OriginalViewController {
+        let s = UIStoryboard(name: String(describing: OriginalViewController.self), bundle: Bundle(for: OriginalViewController.self))
+        let vc = s.instantiateInitialViewController() as! OriginalViewController
+        return vc
+    }
 }
