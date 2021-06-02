@@ -7,6 +7,7 @@
 
 import UIKit
 import SampleSwiftLibrary
+import OriginalFramework
 
 class ViewController: UIViewController {
     /// BaseView
@@ -17,8 +18,13 @@ class ViewController: UIViewController {
         self.baseView.delegate = self
     }
 }
+// MARK: - BaseView Delegate
 extension ViewController: BaseViewDelegate {
     func didTapAlertButton() {
         UIAlertController.showAlertView(vc: self, title: "アラート表示", message: nil, preferredStyle: .alert, okBtnLabel: "OK", cancelBtnLabel: "キャンセル", completion: nil)
+    }
+    func didTapTransitionPageButton() {
+        let vc = OriginalViewController.initViewController()
+        self.present(vc, animated: true, completion: nil)
     }
 }

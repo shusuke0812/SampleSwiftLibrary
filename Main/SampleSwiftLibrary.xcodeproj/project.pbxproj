@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C077CAE26677F5300F1FD35 /* OriginalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C077CAC26677F5300F1FD35 /* OriginalFramework.framework */; platformFilter = ios; };
+		9C077CAF26677F5300F1FD35 /* OriginalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C077CAC26677F5300F1FD35 /* OriginalFramework.framework */; platformFilter = ios; };
+		9C077CB826677F5F00F1FD35 /* OriginalFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C077CAC26677F5300F1FD35 /* OriginalFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C077CBD26677F6400F1FD35 /* OriginalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C077CAC26677F5300F1FD35 /* OriginalFramework.framework */; };
 		9C926A5D264FA47F0032DFD2 /* SampleSwiftLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C926A53264FA47E0032DFD2 /* SampleSwiftLibrary.framework */; };
 		9C926A62264FA47F0032DFD2 /* SampleSwiftLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C926A61264FA47F0032DFD2 /* SampleSwiftLibraryTests.swift */; };
 		9C926A64264FA47F0032DFD2 /* SampleSwiftLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C926A56264FA47E0032DFD2 /* SampleSwiftLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,6 +62,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9C926B02264FCB840032DFD2 /* SampleSwiftLibrary.framework in Embed Frameworks */,
+				9C077CB826677F5F00F1FD35 /* OriginalFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C077CAC26677F5300F1FD35 /* OriginalFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OriginalFramework.framework; sourceTree = "<group>"; };
 		9C926A53264FA47E0032DFD2 /* SampleSwiftLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleSwiftLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C926A56264FA47E0032DFD2 /* SampleSwiftLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleSwiftLibrary.h; sourceTree = "<group>"; };
 		9C926A57264FA47E0032DFD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C926B01264FCB840032DFD2 /* SampleSwiftLibrary.framework in Frameworks */,
+				9C077CBD26677F6400F1FD35 /* OriginalFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C077CAE26677F5300F1FD35 /* OriginalFramework.framework in Frameworks */,
 				9C926AF5264FC8E70032DFD2 /* SampleSwiftLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C077CAF26677F5300F1FD35 /* OriginalFramework.framework in Frameworks */,
 				9C926AF6264FC8ED0032DFD2 /* SampleSwiftLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C077C9326677BBB00F1FD35 /* Originlib */ = {
+			isa = PBXGroup;
+			children = (
+				9C077CAC26677F5300F1FD35 /* OriginalFramework.framework */,
+			);
+			path = Originlib;
+			sourceTree = "<group>";
+		};
 		9C926A49264FA47E0032DFD2 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +177,7 @@
 		9C926A55264FA47E0032DFD2 /* SampleSwiftLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				9C077C9326677BBB00F1FD35 /* Originlib */,
 				9C926A6F264FAB4B0032DFD2 /* Extensions */,
 				9C926A56264FA47E0032DFD2 /* SampleSwiftLibrary.h */,
 				9C926A57264FA47E0032DFD2 /* Info.plist */,
@@ -746,6 +764,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleSwiftLibrary",
+					"$(PROJECT_DIR)/SampleSwiftLibrary/Originlib",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -765,6 +788,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleSwiftLibrary",
+					"$(PROJECT_DIR)/SampleSwiftLibrary/Originlib",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -784,6 +812,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleSwiftLibrary",
+					"$(PROJECT_DIR)/SampleSwiftLibrary/Originlib",
+				);
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -806,6 +839,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleSwiftLibrary",
+					"$(PROJECT_DIR)/SampleSwiftLibrary/Originlib",
+				);
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -827,6 +865,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleSwiftLibrary",
+					"$(PROJECT_DIR)/SampleSwiftLibrary/Originlib",
+				);
 				INFOPLIST_FILE = ExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -847,6 +890,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleSwiftLibrary",
+					"$(PROJECT_DIR)/SampleSwiftLibrary/Originlib",
+				);
 				INFOPLIST_FILE = ExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

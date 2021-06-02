@@ -9,6 +9,7 @@ import UIKit
 
 protocol BaseViewDelegate: AnyObject {
     func didTapAlertButton()
+    func didTapTransitionPageButton()
 }
 
 class BaseView: UIView {
@@ -23,6 +24,9 @@ class BaseView: UIView {
     }
     @IBAction func didTapAlertButton(_ sender: Any) {
         self.delegate?.didTapAlertButton()
+    }
+    @IBAction func didTapTransitionPageButton(_ sender: Any) {
+        self.delegate?.didTapTransitionPageButton()
     }
 }
 // MARK: - Initialized Method
