@@ -31,7 +31,7 @@ extension OriginalViewController {
             print("Labelの読み込みに失敗しました")
         }
     }
-    public func initViewController() -> OriginalViewController {
+    public static func initViewController() -> OriginalViewController {
         let s = UIStoryboard(name: String(describing: OriginalViewController.self), bundle: Bundle(for: OriginalViewController.self))
         let vc = s.instantiateInitialViewController() as! OriginalViewController
         return vc
