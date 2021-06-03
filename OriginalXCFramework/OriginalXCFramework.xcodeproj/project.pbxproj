@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9C93586A266912CA009EF2A1 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9C93586B266912CB009EF2A1 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				9C935870266912D7009EF2A1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9C93581D2668C92C009EF2A1 /* OriginalXCFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C93581B2668C92C009EF2A1 /* OriginalXCFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C93586426690FF3009EF2A1 /* OriginalXCViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C93586326690FF3009EF2A1 /* OriginalXCViewController.storyboard */; };
@@ -18,6 +32,7 @@
 		9C93581C2668C92C009EF2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C93586326690FF3009EF2A1 /* OriginalXCViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OriginalXCViewController.storyboard; sourceTree = "<group>"; };
 		9C93586726691012009EF2A1 /* OriginalXCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalXCViewController.swift; sourceTree = "<group>"; };
+		9C9358722669135F009EF2A1 /* OutputXCFramework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = OutputXCFramework.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +65,7 @@
 		9C93581A2668C92C009EF2A1 /* OriginalXCFramework */ = {
 			isa = PBXGroup;
 			children = (
+				9C93587126691302009EF2A1 /* Script */,
 				9C93586626690FF9009EF2A1 /* ViewController */,
 				9C93586226690FD3009EF2A1 /* Storyboard */,
 				9C93581B2668C92C009EF2A1 /* OriginalXCFramework.h */,
@@ -72,6 +88,14 @@
 				9C93586726691012009EF2A1 /* OriginalXCViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9C93587126691302009EF2A1 /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				9C9358722669135F009EF2A1 /* OutputXCFramework.sh */,
+			);
+			path = Script;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +142,9 @@
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
 					};
+					9C93586A266912CA009EF2A1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 9C9358122668C92C009EF2A1 /* Build configuration list for PBXProject "OriginalXCFramework" */;
@@ -134,6 +161,7 @@
 			projectRoot = "";
 			targets = (
 				9C9358172668C92C009EF2A1 /* OriginalXCFramework */,
+				9C93586A266912CA009EF2A1 /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +176,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C935870266912D7009EF2A1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". ${PROJECT_DIR}/${PROJECT_NAME}/Script/OutputXCFramework.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C9358142668C92C009EF2A1 /* Sources */ = {
@@ -334,6 +382,24 @@
 			};
 			name = Release;
 		};
+		9C93586C266912CB009EF2A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XL9QYTD77;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C93586D266912CB009EF2A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XL9QYTD77;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +417,15 @@
 			buildConfigurations = (
 				9C9358212668C92C009EF2A1 /* Debug */,
 				9C9358222668C92C009EF2A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C93586B266912CB009EF2A1 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C93586C266912CB009EF2A1 /* Debug */,
+				9C93586D266912CB009EF2A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
