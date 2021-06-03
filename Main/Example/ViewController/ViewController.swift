@@ -8,6 +8,7 @@
 import UIKit
 import SampleSwiftLibrary
 import OriginalFramework
+import OriginalXCFramework
 
 class ViewController: UIViewController {
     /// BaseView
@@ -25,6 +26,10 @@ extension ViewController: BaseViewDelegate {
     }
     func didTapTransitionPageButton() {
         let vc = OriginalViewController.initViewController()
+        self.present(vc, animated: true, completion: nil)
+    }
+    func didTapTransitionXCPageButton() {
+        let vc = OriginalXCViewController.initViewController()
         self.present(vc, animated: true, completion: nil)
     }
 }

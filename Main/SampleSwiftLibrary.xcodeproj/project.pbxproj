@@ -27,6 +27,9 @@
 		9C926AF6264FC8ED0032DFD2 /* SampleSwiftLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C926A53264FA47E0032DFD2 /* SampleSwiftLibrary.framework */; };
 		9C926B01264FCB840032DFD2 /* SampleSwiftLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C926A53264FA47E0032DFD2 /* SampleSwiftLibrary.framework */; };
 		9C926B02264FCB840032DFD2 /* SampleSwiftLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C926A53264FA47E0032DFD2 /* SampleSwiftLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C9358B626691D8E009EF2A1 /* OriginalFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C077CC62667853100F1FD35 /* OriginalFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C9358CD26691FFA009EF2A1 /* OriginalXCFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9358C326691FDE009EF2A1 /* OriginalXCFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C9358D226691FFE009EF2A1 /* OriginalXCFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9358C326691FDE009EF2A1 /* OriginalXCFramework.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9C926B02264FCB840032DFD2 /* SampleSwiftLibrary.framework in Embed Frameworks */,
+				9C9358B626691D8E009EF2A1 /* OriginalFramework.framework in Embed Frameworks */,
+				9C9358CD26691FFA009EF2A1 /* OriginalXCFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +96,7 @@
 		9C926A9C264FB4690032DFD2 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		9C926A9E264FB46A0032DFD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C926AB5264FB6C80032DFD2 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		9C9358C326691FDE009EF2A1 /* OriginalXCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OriginalXCFramework.xcframework; path = "../../../OriginalXCFramework/Output/Debug-xcframework/OriginalXCFramework.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 			files = (
 				9C077CC72667853100F1FD35 /* OriginalFramework.framework in Frameworks */,
 				9C926B01264FCB840032DFD2 /* SampleSwiftLibrary.framework in Frameworks */,
+				9C9358D226691FFE009EF2A1 /* OriginalXCFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +149,7 @@
 		9C077C9326677BBB00F1FD35 /* Originlib */ = {
 			isa = PBXGroup;
 			children = (
+				9C9358C326691FDE009EF2A1 /* OriginalXCFramework.xcframework */,
 				9C077CC62667853100F1FD35 /* OriginalFramework.framework */,
 			);
 			path = Originlib;

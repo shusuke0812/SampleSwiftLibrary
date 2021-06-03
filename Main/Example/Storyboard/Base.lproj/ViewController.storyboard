@@ -29,9 +29,16 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6G-AO-3vh">
                                 <rect key="frame" x="15" y="550.5" width="384" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="fraamework"/>
                                 <connections>
                                     <action selector="didTapTransitionPageButton:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="QpB-7w-Zg9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpV-aG-roJ">
+                                <rect key="frame" x="15" y="630.5" width="384" height="30"/>
+                                <state key="normal" title="xcframework"/>
+                                <connections>
+                                    <action selector="didTapTransitionXCPageButton:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="Sy2-Tj-Uar"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,6 +48,9 @@
                             <constraint firstItem="s6G-AO-3vh" firstAttribute="top" secondItem="OFH-D3-LtC" secondAttribute="bottom" constant="80" id="DMm-bT-cdM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s6G-AO-3vh" secondAttribute="trailing" constant="15" id="ENV-lD-Whu"/>
                             <constraint firstItem="OFH-D3-LtC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HKQ-mO-0tM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpV-aG-roJ" secondAttribute="trailing" constant="15" id="crv-Cq-tJB"/>
+                            <constraint firstItem="bpV-aG-roJ" firstAttribute="top" secondItem="s6G-AO-3vh" secondAttribute="bottom" constant="50" id="dtb-al-ERj"/>
+                            <constraint firstItem="bpV-aG-roJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="e41-Hw-Jko"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OFH-D3-LtC" secondAttribute="trailing" constant="15" id="f3P-vZ-v6q"/>
                             <constraint firstItem="OFH-D3-LtC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oaH-wn-td1"/>
                             <constraint firstItem="OFH-D3-LtC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="p5w-BH-HUC"/>
