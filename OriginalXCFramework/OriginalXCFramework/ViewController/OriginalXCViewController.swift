@@ -7,11 +7,11 @@
 
 import UIKit
 
-class OriginalXCViewController: UIViewController {
+public class OriginalXCViewController: UIViewController {
 
     @IBOutlet weak var screenDescriptionLabel: UILabel!
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.initUI()
     }
