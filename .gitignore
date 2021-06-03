@@ -11,3 +11,6 @@ Main/SampleSwiftLibrary/Originlib/OriginalFramework.framework
 
 # vim
 *.swp
+
+# Other
+OriginalXCFramework/Output
