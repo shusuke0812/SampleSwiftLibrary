@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9C93581D2668C92C009EF2A1 /* OriginalXCFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C93581B2668C92C009EF2A1 /* OriginalXCFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C93586426690FF3009EF2A1 /* OriginalXCViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C93586326690FF3009EF2A1 /* OriginalXCViewController.storyboard */; };
+		9C93586826691012009EF2A1 /* OriginalXCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C93586726691012009EF2A1 /* OriginalXCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C9358182668C92C009EF2A1 /* OriginalXCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OriginalXCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C93581B2668C92C009EF2A1 /* OriginalXCFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OriginalXCFramework.h; sourceTree = "<group>"; };
 		9C93581C2668C92C009EF2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C93586326690FF3009EF2A1 /* OriginalXCViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OriginalXCViewController.storyboard; sourceTree = "<group>"; };
+		9C93586726691012009EF2A1 /* OriginalXCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalXCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +50,28 @@
 		9C93581A2668C92C009EF2A1 /* OriginalXCFramework */ = {
 			isa = PBXGroup;
 			children = (
+				9C93586626690FF9009EF2A1 /* ViewController */,
+				9C93586226690FD3009EF2A1 /* Storyboard */,
 				9C93581B2668C92C009EF2A1 /* OriginalXCFramework.h */,
 				9C93581C2668C92C009EF2A1 /* Info.plist */,
 			);
 			path = OriginalXCFramework;
+			sourceTree = "<group>";
+		};
+		9C93586226690FD3009EF2A1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9C93586326690FF3009EF2A1 /* OriginalXCViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9C93586626690FF9009EF2A1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9C93586726691012009EF2A1 /* OriginalXCViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +116,7 @@
 				TargetAttributes = {
 					9C9358172668C92C009EF2A1 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -120,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C93586426690FF3009EF2A1 /* OriginalXCViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C93586826691012009EF2A1 /* OriginalXCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +286,7 @@
 		9C9358212668C92C009EF2A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
@@ -277,6 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.shusuke.ota.OriginalXCFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +312,7 @@
 		9C9358222668C92C009EF2A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
