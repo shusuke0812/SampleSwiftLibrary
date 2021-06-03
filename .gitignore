@@ -8,6 +8,7 @@
 xcuserdata/
 DerivedData/
 Main/SampleSwiftLibrary/Originlib/OriginalFramework.framework
+Main/SampleSwiftLibrary/Originlib/OriginalXCFramework.xcframework
 
 # vim
 *.swp
