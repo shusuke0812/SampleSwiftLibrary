@@ -13,6 +13,9 @@ Main/SampleSwiftLibrary/Originlib/OriginalXCFramework.xcframework
 # vim
 *.swp
 
+# CocoaPods
+Pods/
+
 # Firebase
 GoogleService-Info.plist
 
