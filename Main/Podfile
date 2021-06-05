@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Example' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Example
+  pod 'Firebase/Analytics'
+
+  target 'ExampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ExampleUITests' do
+    # Pods for testing
+  end
+
+end
+
+target 'SampleSwiftLibrary' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SampleSwiftLibrary
+
+  target 'SampleSwiftLibraryTests' do
+    # Pods for testing
+  end
+
+end

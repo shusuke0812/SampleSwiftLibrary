@@ -13,5 +13,8 @@ Main/SampleSwiftLibrary/Originlib/OriginalXCFramework.xcframework
 # vim
 *.swp
 
+# Firebase
+GoogleService-Info.plist
+
 # Other
 OriginalXCFramework/Output
