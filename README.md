@@ -37,3 +37,4 @@ Framework単体プロジェクトは実機用・シミュレータ用でビル�
 ## 参考
 - [【iOS】オープンソースSwiftライブラリのつくり方](https://qiita.com/shtnkgm/items/0f62398c66af159401a6)
 - [【Swift5】自作画面を Framework で再利用する](https://exgyaruo.com/programming/swift/swift5-original-framework)
+- [[Xcode6] iOSアプリプロジェクト内にframeworkプロジェクト](https://mushikago.com/i/?p=5671)
